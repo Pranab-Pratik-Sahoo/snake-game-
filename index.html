@@ -7,6 +7,39 @@
         border: 1px solid #d3d3d3;
         background-color: #f1f1f1;
       }
+     .controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.left-button,
+.right-button,
+.up-button,
+.down-button {
+  background-color: #ccc;
+  color: #000;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.left-button {
+  transform: rotate(180deg);
+}
+
+.up-button {
+  transform: rotate(-90deg);
+}
+
+.down-button {
+  transform: rotate(90deg);
+}
+
+
     </style>
 <div class="controls">
   <button class="left-button" onclick="changeDirection('left')">Left</button>
